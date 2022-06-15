@@ -1,0 +1,20 @@
+<ul>
+  <tr *ngFor="let show of shows; let i = index; let first = first; let last = last;" [ngClass]="{ first: first, last: last }">
+    <td>{{ i }}</td>
+    <td>{{show.title}</td>
+    <td>{{show.genre}</td>
+    <td>{{show.mainCharacter}</td>
+    <td>{{show.maturityRating}</td>
+  </tr>
+</ul>
+}
+
+<ul>
+  <tr *ngFor="let show of shows; let i = index; trackBy: trackByFn">
+    <td>{{ i }}</td>
+    <td>{{show.title}</td>
+    <td>{{show.genre}</td>
+    <td>{{show.mainCharacter}</td>
+    <td>{{show.maturityRating}</td>
+  </tr>
+</ul>

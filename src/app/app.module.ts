@@ -6,12 +6,18 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { BodyComponent } from './body/body.component';
 import { FormsModule } from '@angular/forms';
+import { HomeComponent } from './home/home.component';
+import { ProfileComponent } from './profile/profile.component';
+import { SharedComponent } from './shared/shared.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     BodyComponent,
+    HomeComponent,
+    ProfileComponent,
+    SharedComponent,
   ],
   imports: [
     BrowserModule,
